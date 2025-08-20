@@ -28,7 +28,8 @@ html {
 --------------------- */
 :root {
     /* Color */
-    --primary-color: #FFF;
+    --primary-color: #ffffff;
+    --primary-silver-color: #cfcfcf;
     --secundary-color: #000;
     --tertiary-color: #FC773D;
     --quaternary-color: #018DE2;
