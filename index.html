@@ -6,7 +6,7 @@
     <!-- Título na barra de navegação -->
     <title>Good Mood - Seja bem-vindo</title>
     <!-- Ícone na barra de navegação -->
-    <link rel="icon" href="./assets/icons/Icon.png" type="image/png">
+    <link rel="icon" href="./assets/icons/icon.ico" type="image/x-icon">
     <!-- Link para variáveis do css -->
     <link rel="stylesheet" href="./css/variables.css" type="text/css">
     <!-- Link para padronizar ou normalizar css -->
@@ -19,21 +19,20 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
-        <div>
-            <img src="" alt="">
-        </div>
+    <header id="cabecalho_pagina">
+            <a href="#" id="logo_vertical">
+                <img src="assets/images/logo_vertical.png" alt="Logo da ONG Good Mood">
+            </a>
 
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" target="_self" rel="next">Home</a></li>
-                    <li><a href="about.html" target="_self" rel="next">Sobre nós</a></li>
-                    <li><a href="contact.html" target="_self" rel="next">Contato</a></li>
-                    <li><a href="donate.html" target="_self" rel="next">Doar</a></li>
-                </ul>
+            <nav id="botoes_cabecalho">
+                <a href="#" class="botao_cabecalho">Home</a>
+                <a href="#" class="botao_cabecalho">Sobre nós</a>
+                <a href="#" class="botao_cabecalho">Contato</a>
+                <a href="#" id="botao_doar_cabecalho" class="botao_cabecalho">
+                    <img src="assets/images/coracao_do_doar.png" id="coracao_do_doar">
+                    <span>Doar</span>
+                </a>
             </nav>
-        </div>
     </header>
 
     <!-- Corpo do site - main -->
@@ -64,7 +63,7 @@
             </div>
         </div>
 
-        <!-- Corpo do cabeçalho -->
+        <!-- Corpo do rodapé -->
         <div class="box-middle">
             <div class="box-content-text">
                 <h4 class="title-footer-middle background-orange">Sobre nós</h4>
@@ -112,7 +111,7 @@
             </div>
         </div>
 
-        <!-- Copyright do cabeçalho -->
+        <!-- Copyright do rodapé -->
         <div class="copyright">
             <p>© 2025 Good Mood. Todos os direitos reservados.</p>
         </div>
