@@ -448,7 +448,7 @@
     }
 
     /* middle */
-    #box-middle div {
+    #box-middle section {
         width: 80%;
     }
 }

@@ -46,14 +46,14 @@
 
     <!-- Rodapé -->
     <footer id="footer-site">
-        <!-- Superior ou caixa newsller -->
+        <!-- Superior ou caixa newsletter -->
         <section id="box-newsletter">
             <section id="text-newsletter">
                 <h3>Um clique que espalha alegria!</h3>
                 <p>Assine nossa newsletter e fique por dentro das visitas, eventos e projetos que espalham felicidade.</p>
             </section>
             
-            <section class="form-newsller">
+            <section id="form-newsletter">
                 <form action="#">
                     <div id="input-container">
                         <i class="fi fi-sr-envelope"></i>
@@ -85,7 +85,7 @@
                 </nav>
             </section>
             
-            <div class="box-content-text">
+            <section class="box-content-text">
                 <h4 class="title-footer-middle background-yellow">Contatos</h4>
                 <section class="box-text-contact">
                     <p>📍 Rua xxxxxxx, 1234 - São Paulo/SP</p>
@@ -94,8 +94,8 @@
                 </section>
             </section>
             
-            <section class="box-content-icon">
-                <section class="box-social-orange btn-grad">
+            <section id="box-content-icon">
+                <section class="box-social-orange">
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener">
                         <i class="fi fi-brands-instagram"></i>
                     </a>
@@ -121,17 +121,17 @@
         </section>
     </footer>
 
+    <!-- API Libras -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
 </body>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 <script src="js/main.js" type="text/js"></script>
-
 </html>
