@@ -88,14 +88,14 @@
 
 
 /* ---- RODAPÉ ----- */
-.footer-site {
+#footer-site {
     position: relative;
     width: 100%;
     font-family: var(--font-family-heading), sans-serif;
 }
 
-/* newsller */
-.box-newsller {
+/* newsletter */
+#box-newsletter {
     position: relative;
     width: 100%;
     padding: var(--spacing-12);
@@ -107,8 +107,8 @@
     color: var(--primary-color);
 }
 
-/* newsller text */
-.text-newsller {
+/* newsletter text */
+#text-newsletter {
     position: relative;
     width: 50%;
     display: flex;
@@ -117,21 +117,21 @@
     gap: var(--spacing-4);
 }
 
-.text-newsller h3 {
+#text-newsletter h3 {
     font-size: var(--font-size-3xl);
 }
 
-.text-newsller p {
+#text-newsletter p {
     max-width: 420px;
 }
 
-/* newsller form */
-.form-newsller {
+/* newsletter form */
+#form-newsletter {
     position: relative;
     width: 50%;
 }
 
-.form-newsller form {
+#form-newsletter form {
     position: relative;
     width: 100%;
     display: flex;
@@ -140,7 +140,7 @@
     gap: var(--spacing-4);
 }
 
-.form-newsller form .input-container {
+#form-newsletter form #input-container {
     position: relative;
     width: 50%;
     background-color: var(--primary-color);
@@ -150,7 +150,7 @@
     align-items: center;
 }
 
-.input-container i {
+#input-container i {
     position: absolute;
     z-index: 1;
     opacity: 70%;
@@ -158,7 +158,7 @@
     color: var(--secundary-color);
 }
 
-.form-newsller form .input-container input {
+#form-newsletter form #input-container input {
     position: relative;
     width: 100%;
     font-weight: 500;
@@ -168,14 +168,14 @@
     padding: var(--spacing-3) var(--spacing-8);
 }
 
-.btn-container {
+#btn-container {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.form-newsller form .btn-container input {
+#form-newsletter form #btn-container input {
     width: 40%;
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-medium);
@@ -188,20 +188,20 @@
     transition: var(--transition-fast);
 }
 
-.form-newsller form .btn-container input:hover {
+#form-newsletter form #btn-container input:hover {
     color: var(--tertiary-color);
     background-color: var(--primary-color);
     transition: var(--transition-fast);
 }
 
-.form-newsller form .btn-container input:active {
+#form-newsletter form #btn-container input:active {
     color: var(--tertiary-color);
     background-color: var(--primary-silver-color);
     transition: var(--transition-fast);
 }
 
 /* middle */
-.box-middle {
+#box-middle {
     position: relative;
     width: 100%;
     padding: var(--spacing-8);
@@ -212,7 +212,7 @@
     gap: 60px;
 }
 
-.box-middle div {
+#box-middle section {
     position: relative;
     width: 20%;
 }
@@ -230,7 +230,7 @@
 }
 
 /* middle about */
-.box-middle .box-content-text h4 {
+#box-middle .box-content-text h4 {
     text-align: center;
     margin: 0px auto var(--spacing-4);
     padding: var(--spacing-2) var(--spacing-2);
@@ -239,57 +239,60 @@
     color: var(--primary-color);
 }
 
-.box-middle .box-content-text .box-text-middle {
+#box-middle .box-content-text .box-text-middle {
     line-height: var(--line-height-base);
     margin-bottom: var(--spacing-2);
 }
 
 /* middle help */
-.box-middle .box-content-text nav ul li {
+#box-middle .box-content-text nav ul li {
     margin-bottom: var(--spacing-1);
 }
 
-.box-middle .box-content-text nav ul li a {
+#box-middle .box-content-text nav ul li a {
+    display: block;
     color: var(--tertiary-color);
     font-weight: var(--font-weight-bold);
+    margin-top: var(--spacing-3);
 }
 
-.box-middle .box-content-text nav ul li a::after {
+#box-middle .box-content-text nav ul li a::after {
     content: " ";
-    width: 0;
-    height: 2px;
-    background-color: var(--tertiary-color);
-    margin: var(--spacing-1) 0 var(--spacing-2);
     display: block;
-    transition: 0.3s;
+    width: 0;
+    height: 3px;
+    background-color: var(--tertiary-color);
+    margin-top: var(--spacing-1);
+    transition: var(--transition-fast);
 }
 
-.box-middle .box-content-text nav ul li a:hover::after {
+#box-middle .box-content-text nav ul li a:hover::after {
     width: 60px;
+    transition: var(--transition-fast);
 }
 
 /* middle contact */
-.box-middle .box-content-text .box-text-contact {
+#box-middle .box-content-text .box-text-contact {
     width: 100%;
 }
 
-.box-middle .box-content-text .box-text-contact p {
+#box-middle .box-content-text .box-text-contact p {
     margin-bottom: var(--spacing-2);
 }
 
-.box-middle .box-content-text .box-text-contact p a {
+#box-middle .box-content-text .box-text-contact p a {
     display: block;
     width: 100%;
     transition: var(--transition-fast);
 }
 
-.box-middle .box-content-text .box-text-contact p a:hover {
+#box-middle .box-content-text .box-text-contact p a:hover {
     color: var(--tertiary-color);
     transition: var(--transition-fast);
 }
 
 /* middle icon social */
-.box-middle .box-content-icon {
+#box-middle #box-content-icon {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -299,7 +302,7 @@
     color: var(--primary-color);
 }
 
-.box-middle .box-content-icon div {
+#box-middle #box-content-icon section {
     position: relative;
     width: 56px;
     height: 56px;
@@ -324,13 +327,13 @@
     background: linear-gradient(to right, var(--quintenary-color) 0%, #ff2626ec  100%, var(--quintenary-color)  100%)
 }
 
-.box-middle .box-content-icon div:hover {
+#box-middle #box-content-icon section:hover {
     scale: 1.1;
     background-position: right center;
     transition: var(--transition-fast);
 }
 
-.box-middle .box-content-icon div a {
+#box-middle #box-content-icon section a {
     width: 100%;
     height: 50px;
     display: flex;
@@ -339,13 +342,13 @@
     align-items: center;
 }
 
-.box-middle .box-content-icon i {
+#box-middle #box-content-icon i {
     font-size: var(--font-size-3xl);
     height: 30px;
 }
 
 /* copyright */
-.copyright {
+#copyright {
     position: relative;
     width: 100%;
     padding: var(--spacing-3);
@@ -379,38 +382,38 @@
 
     
     /* ----  RODAPÉ ---- */
-    /* newsller */
-    .box-newsller {
+    /* newsletter */
+    #box-newsletter {
         flex-direction: column;
         gap: var(--spacing-8);
     }
 
-    /* newsller text */
-    .text-newsller {
+    /* newsletter text */
+    #text-newsletter {
         text-align: center;
     }
 
-    /* newsller form */
-    .form-newsller {
+    /* newsletter form */
+    #form-newsletter {
         width: 80%;
     }
 
-    .form-newsller form .input-container {
+    #form-newsletter form #input-container {
         width: 100%;
     }
 
-    .form-newsller form .btn-container input {
+    #form-newsletter form #btn-container input {
         width: 80%;
     }
 
     /* middle */
-    .box-middle {
+    #box-middle {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .box-middle div {
+    #box-middle section {
         width: 50%;
         text-align: center;
     }
@@ -435,17 +438,17 @@
     
     /* ----  RODAPÉ ---- */
     /* newaller */
-    .box-newsller {
+    #box-newsletter {
         width: 100%;
     }
 
-    /* newsller text */
-    .text-newsller {
+    /* newsletter text */
+    #text-newsletter {
         width: 100%;
     }
 
     /* middle */
-    .box-middle div {
+    #box-middle div {
         width: 80%;
     }
 }
@@ -469,17 +472,17 @@
     
     /* ----  RODAPÉ ---- */
     /* newaller */
-    .box-newsller {
+    #box-newsletter {
         padding: var(--spacing-12) 0;
     }
 
-    /* newsller form */
-    .form-newsller form .btn-container input {
+    /* newsletter form */
+    #form-newsletter form #btn-container input {
         width: 100%;
     }
 
     /* middle */
-    .box-middle div {
+    #box-middle section {
         width: 100%;
     }
 }
