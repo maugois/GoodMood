@@ -1,5 +1,5 @@
 /* --------------------
-   Estilos das páginas
+   Estilo da página
 --------------------- */
 /* ---- GERAL ---- */
 main {
@@ -188,20 +188,17 @@ main {
 
 
 /* ---- PÁGINA INDEX ---- */
-
-
-
-/* ---- PÁGINA SOBRE NÓS ---- */
-
-
-
-/* ---- PÁGINA CONTATO ---- */
-
-
-
-/* ---- PÁGINA DOAR ---- */
-
-
+#presentation {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-base);
+    background-image: url(../assets/images/);
+}
 
 /* ---- RODAPÉ ----- */
 #footer-site {
@@ -515,15 +512,6 @@ main {
     /* ---- PÁGINA INDEX ---- */
 
     
-    /* ---- PÁGINA SOBRE NÓS ---- */
-
-    
-    /* ---- PÁGINA CONTATO ---- */
-
-
-    /* ---- PÁGINA DOAR ---- */
-
-    
     /* ----  RODAPÉ ---- */
     /* newsletter */
     #box-newsletter {
@@ -577,15 +565,6 @@ main {
     /* ---- PÁGINA INDEX ---- */
 
     
-    /* ---- PÁGINA SOBRE NÓS ---- */
-
-    
-    /* ---- PÁGINA CONTATO ---- */
-
-
-    /* ---- PÁGINA DOAR ---- */
-
-    
     /* ----  RODAPÉ ---- */
     /* newaller */
     #box-newsletter {
@@ -617,15 +596,6 @@ main {
 
     
     /* ---- PÁGINA INDEX ---- */
-
-    
-    /* ---- PÁGINA SOBRE NÓS ---- */
-
-    
-    /* ---- PÁGINA CONTATO ---- */
-
-
-    /* ---- PÁGINA DOAR ---- */
 
     
     /* ----  RODAPÉ ---- */
