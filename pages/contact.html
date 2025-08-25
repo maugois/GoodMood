@@ -4,40 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título na barra de navegação -->
     <title>Good Mood - Seja bem-vindo</title>
-    <!-- Ícone na barra de navegação -->
     <link rel="icon" href="../assets/icons/icon.ico" type="image/x-icon">
-    <!-- Link para variáveis do css -->
     <link rel="stylesheet" href="../css/variables.css" type="text/css">
-    <!-- Link para padronizar ou normalizar css -->
     <link rel="stylesheet" href="../css/normalize.css" type="text/css">
-    <!-- Link para o estilo geral do css -->
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
-        <!-- Link para o estilo geral da página -->
     <link rel="stylesheet" href="../css/contact.css" type="text/css">
-    <!-- Link para ícones do https://www.flaticon.com/ -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css' type="text/css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css' type="text/css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
     <header id="cabecalho-pagina">
-        <!-- Logo -->
         <a href="../index.html" target="_self" id="logo-vertical">
             <img src="../assets/images/logo_vertical.png" alt="Logo da ONG Good Mood" title="Good Mood">
         </a>
 
-        <!-- Barra de navegação não responsiva -->
         <nav id="nav-bar">
             <ul id="lista-botoes-cabecalho">
                 <li><a href="../index.html" class="botao-cabecalho">Home</a></li>
-                
+
                 <li><a href="./about.html" class="botao-cabecalho">Sobre nós</a></li>
-                
+
                 <li><a href="./contact.html" class="botao-cabecalho">Contato</a></li>
-                
+
                 <li><a href="./donate.html" id="botao-doar-cabecalho">
                         <img src="../assets/images/coracao_do_doar.png" id="coracao-do-doar">
                         <span>Doar</span>
@@ -46,46 +37,100 @@
             </ul>
         </nav>
 
-        <!-- Botão doar e icone para responsividade -->
         <div id="container-btn-mobile">
             <a href="./donate.html" id="botao-doar-cabecalho">
                 <img src="../assets/images/coracao_do_doar.png" id="coracao-do-doar">
                 <span>Doar</span>
             </a>
-            
+
             <div class="btn-mobile">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>        
+            </div>
         </div>
-        
-        <!-- Links do responsivo -->
+
         <nav id="nav-mobile" class="nav-list">
             <ul id="lista-botoes-cabecalho">
                 <li><a href="../index.html" class="botao-cabecalho">Home</a></li>
-                
+
                 <li><a href="./about.html" class="botao-cabecalho">Sobre nós</a></li>
-                
+
                 <li><a href="./contact.html" class="botao-cabecalho">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Corpo do site - main -->
     <main>
-        Contato
+        <section id="titulo-contato">
+            <h1>Quer levar alegria e esperança para quem mais precisa?</h1>
+            <p>Acreditamos que o riso é uma das formas mais poderosas de transformar vidas. Nosso trabalho voluntário
+                leva alegria, esperança para pessoas que tanto precisam de um momento de leveza.</p>
+        </section>
+
+        <div id="logo-vertical-contato">
+            <img src="../assets/images/Good_Mood_Horizontal.png" alt="">
+        </div>
+
+        <section id="first-button-image-contact" class="button-image-contact-container">
+            <a href="" class="button-image-contact">
+                <img src="../assets/images/contact/contact-1.png" class="image-button" alt="">
+                <h4 class="title-button-contact">Venha fazer parte da equipe</h4>
+            </a>
+            <p>Ao se juntar a nós, você não apenas colabora com uma causa nobre, mas também se torna parte de uma rede
+                que espalha amor e solidariedade por onde passa. Trabalhar conosco é compartilhar sorrisos, vivenciar
+                experiências únicas e contribuir para um mundo mais humano e cheio de cores. Vamos juntos transformar
+                realidades com a força da alegria.</p>
+        </section>
+
+        <section id="second-button-image-contact" class="button-image-contact-container">
+            <a href="" class="button-image-contact">
+                <img src="../assets/images/contact/contact-2.png" class="image-button" alt="">
+                <h4 class="title-button-contact">Quero levar alegria</h4>
+            </a>
+            <p>Ao convidar nossa trupe para sua instituição, você estará abrindo as portas para um encontro que vai além
+                da diversão: é uma experiência de cuidado, afeto e solidariedade que transforma o ambiente e aquece
+                corações. Contratar nossos serviços é proporcionar sorrisos, criar memórias inesquecíveis e tornar seu
+                espaço mais humano, colorido e cheio de vida.</p>
+        </section>
+
+        <section id="third-button-image-contact" class="button-image-contact-container">
+            <a href="" class="button-image-contact">
+                <img src="../assets/images/contact/contact-3.png" class="image-button" alt="">
+                <h4 class="title-button-contact">Mande um alô</h4>
+            </a>
+            <p>Quer saber mais sobre o nosso trabalho? Tem uma sugestão criativa, uma ideia maluca ou só quer trocar
+                umas boas risadas com a gente? Manda ver! Sua mensagem vai encher nosso dia de alegria vamos te
+                responder com o maior carinho.</p>
+        </section>
+
+        <section id="formulario">
+            <div id="form-buttons">
+                <button class="categoria-contato">Trabalhe<br>conosco</button>
+                <button class="categoria-contato">Agende sua<br>visita</button>
+                <button class="categoria-contato">Contate-nos</button>
+            </div>
+
+            <form id="form1">
+                <label for="form-name">Nome</label>
+                <input type="text" name="form-name" id="form-name">
+                <label for="form-email">E-mail</label>
+                <input type="email " name="form-email" id="form-email">
+                <label for="form-message">Escreva uma mensagem para a gente</label>
+                <textarea name="form-message" id="form-message"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
-    <!-- Rodapé -->
     <footer id="footer-site">
-        <!-- Superior ou caixa newsletter -->
         <section id="box-newsletter">
             <section id="text-newsletter">
                 <h3>Um clique que espalha alegria!</h3>
-                <p>Assine nossa newsletter e fique por dentro das visitas, eventos e projetos que espalham felicidade.</p>
+                <p>Assine nossa newsletter e fique por dentro das visitas, eventos e projetos que espalham felicidade.
+                </p>
             </section>
-            
+
             <section id="form-newsletter">
                 <form action="#">
                     <div id="input-container">
@@ -100,13 +145,13 @@
             </section>
         </section>
 
-        <!-- Corpo do rodapé -->
         <section id="box-middle">
             <section class="box-content-text">
                 <h4 class="title-footer-middle background-orange">Sobre nós</h4>
-                <p class="box-text-middle">A Good Mood é uma ONG que espalha alegria e esperança por meio de arte, música e afeto. Nossa missão é transformar dias difíceis em momentos inesquecíveis.</p>
+                <p class="box-text-middle">A Good Mood é uma ONG que espalha alegria e esperança por meio de arte,
+                    música e afeto. Nossa missão é transformar dias difíceis em momentos inesquecíveis.</p>
             </section>
-            
+
             <section class="box-content-text">
                 <h4 class="title-footer-middle background-blue">Ajuda</h4>
                 <p class="box-text-middle">Descubra como apoiar nossos projetos e espalhar mais alegria pelo mundo:</p>
@@ -117,16 +162,17 @@
                     </ul>
                 </nav>
             </section>
-            
+
             <section class="box-content-text">
                 <h4 class="title-footer-middle background-yellow">Contatos</h4>
                 <section class="box-text-contact">
                     <p>📍 Rua xxxxxxx, 1234 - São Paulo/SP</p>
-                    <p><a href="mailto:contato@goodmood.com" target="_blank" rel="noopener">📧 contato@goodmood.com</a></p>
+                    <p><a href="mailto:contato@goodmood.com" target="_blank" rel="noopener">📧 contato@goodmood.com</a>
+                    </p>
                     <p>📞 (11) 99999-9999</p>
                 </section>
             </section>
-            
+
             <section id="box-content-icon">
                 <section class="box-social-orange">
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener">
@@ -139,7 +185,7 @@
                         <i class="fi fi-brands-facebook"></i>
                     </a>
                 </section>
-                
+
                 <section class="box-social-yellow">
                     <a href="https://www.youtube.com/" target="_blank" rel="noopener">
                         <i class="fi fi-brands-youtube"></i>
@@ -148,23 +194,24 @@
             </section>
         </section>
 
-        <!-- Copyright do rodapé -->
         <section id="copyright">
             <p>© 2025 Good Mood. Todos os direitos reservados.</p>
         </section>
     </footer>
 
-    <!-- API Libras -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="./js/main.js" defer></script>
+    
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
 </body>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
-<script src="./js/main.js" defer></script>
+
 </html>
