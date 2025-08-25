@@ -418,7 +418,7 @@ main {
 
 #group-images-operate {
     position: relative;
-    width: 80%;
+    width: 55%;
     margin: var(--spacing-12) auto 0;
     display: flex;
     flex-direction: column;
@@ -430,7 +430,7 @@ main {
 #group-images-operate article {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 250px;
     border-radius: var(--border-radius-lg);
     border: solid var(--border-width-strong) var(--tertiary-color);
     box-shadow: var(--shadow-lg);
@@ -1059,6 +1059,10 @@ main {
  
     #title-images-operate {
         width: 100%;
+    }
+
+    #group-images-operate {
+        width: 80%;
     }
 
     #cards-locais {
