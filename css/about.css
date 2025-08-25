@@ -1,6 +1,589 @@
-/* --------------------
-   Estilo da página
---------------------- */
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 80vh;
+    background: url(../assets/images//about/jptitulo2.png);
+    background-size: cover;
+    position: relative; 
+}
+
+.title_about {
+    font-size: 60px;
+    text-align: center;
+    color: #FC773D;
+    position: relative; 
+    z-index: 3; 
+    margin: 0 10%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+/* Estilo para os SVGs decorativos dentro do h1 */
+.title_about img {
+    height: auto;
+    z-index: 2; 
+    filter: blur(2px); 
+    opacity: 0.8; 
+    width: 120px; 
+}
+
+/* Os SVGs não precisam de posicionamento absoluto aqui,
+   o flexbox do h1 já faz o alinhamento.
+   As classes welcome-svg-left e welcome-svg-right podem ser usadas para
+   ajustes de tamanho se os SVGs forem diferentes.
+*/
+.welcome-svg-left {
+    width: 120px; 
+}
+
+.welcome-svg-right {
+    width: 120px;
+}
+
+.comeco {
+    background-color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    
+}
+
+.comeco .texto {
+    display: flex;
+    flex-direction: column;
+    height: 20h;
+    width: 40%;
+
+}
+
+.comeco .texto .title {
+    font-size: 60px;
+    color: #FCBE2A
+
+}
+
+.comeco .texto .desc {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.comeco .texto .desc2 {
+    font-size: 25px;
+    margin-top: px;
+}
+
+.comeco .img {
+    width: 30%;
+    height: 45vh;
+    border-radius: 15px;
+    background-image: url(../assets/images//about/onde\ começou.png);
+    background-repeat: no-repeat;
+    
+}
+
+
+.foco {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    
+
+}
+
+.foco .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 40%;
+    font-family: var(--font-family-base) "Inter", sans-serif;
+    height: auto; 
+}
+
+.foco .texto .title {
+    font-size: 60px;
+    color: #FF4D00;
+    font-family: var(--font-family-base) "Fredoka", sans-serif;
+}
+
+.foco .texto .desc {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.foco .img {
+    width: 30%;
+    height: auto; 
+    min-height: 40vh; 
+    border-radius: 15px;
+    background-image: url(../assets/images/about/gettyimages-95580731-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #018DDF;
+   
+    
+}
+
+
+.jornada {
+    height: 80vh;
+    background: url(..//assets/images//about/imagemfundonossajornada.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 100px 100px 0;
+    box-sizing: inherit;
+    
+}
+.jornada h1 {
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.jornada .box {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.jornada .box .box1, .jornada .box .box2{
+    width: 45vw;
+    height: 30vh;
+    border-radius: 15px;
+    background-color: rgba();
+    margin-top: 50px;
+
+}
+
+.box1 .content {
+    padding: 20px;
+    width: 700px;
+    height: 300px;
+    flex-shrink: 0;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px 150px 150px 150px;
+    border: 3px solid #000;
+    background-color: #018DDF;
+    box-shadow: 10px 10px 9.9px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.box1 .content p {
+    font-size: 24px
+}
+
+.box2 .content {
+   padding: 20px;
+    width: 700px;
+    height: 300px;
+    flex-shrink: 0;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px 150px 150px 150px;
+    border: 3px solid #000;
+    background-color: #018DDF;
+    box-shadow: 10px 10px 9.9px 0 rgba(0, 0, 0, 0.25);
+}
+
+.box2 .content p {
+    font-size: 24px;
+}
+
+.equipe {
+    height: 100vh;
+    background-image: url(../assets/images/about/fundoequipe2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.equipe h1 {
+    color: #F54B14;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+
+.equipe .card_t {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card_t .card {
+    width: 14%;
+    height: 450px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    margin: 0 20px;
+    margin-bottom: 15px;
+}
+
+.equipe .card_b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card_b .card {
+    width: 14%;
+    height: 450px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    margin: 0 20px;
+    margin-bottom: 15px;
+
+
+}
+
+.foto_lucas {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../assets/images/about/Lucas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+}
+
+.foto_lucas:hover {
+  background-image: url(../assets/images/about/Lucas2.png);
+}
+
+.foto_heitor {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../assets/images/about/heitor1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.foto_heitor:hover {
+  background-image: url(../assets/images/about/heitor.png);
+}
+
+.foto_guilherme {
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../assets/images/about/Guilherme.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.foto_guilherme:hover {
+  background-image: url(../assets/images/about/Guilherme2.png);
+}
+
+.foto_mauricio {
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../assets/images/about/Mauricio2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.foto_mauricio:hover {
+  background-image: url(../assets/images/about/Mauricio.png);
+}
+
+.foto_jotape {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../assets/images/about/jp.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+.foto_jotape:hover {
+  background-image: url(../assets/images/about/JP2.png);
+}
+
+.foto_cleyton {
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../assets/images/about/Cleyton2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.foto_cleyton:hover {
+  background-image: url(../assets/images/about/Cleyton.png);
+}
+
+
+.card .desc, .card .nome {
+    padding: 5px;
+
+}
+
+.card .desc {
+    font-size: 20px;
+}
+
+.apoio {
+  background-color: #E4E4E4;
+  padding: 80px 0;
+  text-align: center;
+  margin-top: 150px;
+  position: relative;
+  padding-bottom: 100px;
+  
+}
+.seta-amarela, .seta-azul {
+  position: absolute; 
+  width: 150px; 
+  height: auto;
+}
+
+
+.seta-amarela {
+   position: absolute;
+  top: 10%; 
+  left: 5%; 
+}
+
+.seta-azul {
+  position: absolute;
+  width: 150px; 
+  top: 20%;     
+  right: 5%;    
+  z-index: 2;
+  
+}
+
+
+
+.apoio-titulo {
+  font-size: 40px;
+  color: #018DDF;
+  text-shadow: 1px 1px 4px #00000050;
+  margin-bottom: 50px;
+}
+
+.apoio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+  flex-wrap: wrap;
+}
+
+.apoio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.apoio-card .icone {
+   background-color: #FF6D3D; 
+  width: 200px; 
+  height: 140px; 
+  border-radius: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.apoio-card .icone img {
+  width: 50px;
+  height: 50px;
+}
+
+.botao {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+   padding: 30px 87.688px 35.075px 80px;
+   justify-content: center;
+   align-items: center;
+   gap: 9.743px;
+}
+
+.botao.laranja {
+  background-color: #FF6D3D;
+}
+
+.botao.laranja:hover {
+  background-color: #fa916eb9;
+}
+
+.apoio-card.laranja .icone {
+  background-color: #FF6D3D;
+}
+
+.apoio-card.laranja .icone:hover {
+    background-color: #ff6d3db6;
+
+}
+
+.botao.amarelo {
+  background-color: #F5BE2A;
+  color: #FFF;
+}
+
+.botao.amarelo:hover {
+  background-color: #e0aa15;
+}
+
+.apoio-card.amarelo .icone {
+  background-color: #F5BE2A;
+}
+
+.apoio-card.amarelo .icone:hover {
+  background-color: #f7da8b;
+}
+
+
+.feedbacks {
+    background-color: #018DDF; 
+    color: #FFFFFF; 
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.feedback-cabecalho {
+    margin-bottom: 50px;
+}
+
+.feedback-cabecalho h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feedback-cabecalho p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.feedback-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    flex-wrap: wrap; 
+    margin-bottom: 50px;
+}
+
+.card-feedback {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    text-align: left;
+    padding: 30px; 
+}
+
+.card-feedback .perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-feedback .perfil img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card-feedback .perfil h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card-feedback .perfil p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.card-feedback .depoimento {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.feedback-numeros {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card-numero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-numero h3 {
+    font-size: 48px;
+    color: #FCBE2A; 
+    margin-bottom: 10px;
+}
+
+.card-numero p {
+    font-size: 18px;
+}
+
+
+
+
+
+
 
 body {
     /* teste */
