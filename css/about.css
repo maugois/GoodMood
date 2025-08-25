@@ -1,0 +1,28 @@
+/* --------------------
+   Estilo da página
+--------------------- */
+
+body {
+    /* teste */
+}
+
+/* --------------------
+   Responsividade
+--------------------- */
+
+/* -------- TABLET -------- */
+@media (max-width: 1024px) {
+
+}
+
+
+/* -------- MOBILE GRANDE -------- */
+@media (max-width: 768px) {
+
+}
+
+
+/* -------- MOBILE -------- */
+@media (max-width: 480px) {
+
+}
