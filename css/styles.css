@@ -6,6 +6,24 @@ main {
     padding-top: 105px;
 }
 
+.icon-generics {
+    position: absolute;
+}
+
+#light-vector {
+    top: 10px;
+    left: 50%; 
+    transform: translateX(-185%);
+}
+
+#light-vector img {
+    width: 95px;
+}
+
+#king img {
+    width: 80px;
+}
+
 /* ---- CABEÇALHO ---- */
 /* Container do cabeçalho */
 #cabecalho-pagina{
@@ -209,7 +227,7 @@ main {
     text-shadow:             
         /* Primeira camada próxima */
         -1px -1px 0 #000,
-        1px -1px 0 #000000,
+        1px -1px 0 #000,
         -1px  1px 0 #000,
         1px  1px 0 #000,
         0   -1px 0 #000,
@@ -296,7 +314,7 @@ main {
     text-shadow:             
         /* Primeira camada próxima */
         -1px -1px 0 #000,
-        1px -1px 0 #000000,
+        1px -1px 0 #000,
         -1px  1px 0 #000,
         1px  1px 0 #000,
         0   -1px 0 #000,
