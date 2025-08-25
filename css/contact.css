@@ -1,13 +1,193 @@
 /* --------------------
-   Estilo da página
+    Estilo da página
 --------------------- */
-
-body {
-    /* teste */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+body{
+    font-family: var(--font-family-heading);
+}
+
+#titulo-contato{
+    background-image: url(../assets/images/contact/fundo-titulo-contato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 10%;
+    font-family: var(--font-family-base);
+}
+
+#titulo-contato h1{
+    color: #FC773D;
+    text-shadow: 
+    -2px -2px 0 #fff,  
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+}
+
+#titulo-contato p{
+    color: #fff;
+}
+
+#logo-vertical-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#logo-vertical-contato img{
+    width: 30%;
+    height: auto;
+}
+
+#first-button-image-contact, #second-button-image-contact, #third-button-image-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-image-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: 300px;
+}
+
+
+#first-button-image-contact, #third-button-image-contact{
+    color: #fff;
+    background-color: #E0E2E3;
+}
+
+.image-button{
+    width: 70%;
+}
+
+.title-button-contact{
+    background-color: #FC773D;
+    color: #fff;
+    border-radius: 10px;
+    height: 90px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: absolute;
+    top: 195px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    3px 3px 5px #000;
+    font-family: var(--font-family-base);
+}
+
+#first-button-image-contact .title-button-contact{
+    background-color: #018DE2;
+}
+
+.button-image-contact-container{
+        height: 480px;
+}
+
+.button-image-contact-container p{
+    width: 65%;
+    text-align: center;
+}
+
+#formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+#form-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 38%;
+    margin-top: 100px;
+}
+
+.categoria-contato{
+    border: 0;
+    background-color: #E0E2E3;
+    color: #FC773D;
+    border-radius: 10px;
+    height: 54px;
+    width: 30%;
+}
+
+.categoria-contato:hover{
+    border: 0;
+    background-color:#FC773D;
+    color: #fff;
+    border-radius: 10px;
+    height: 60px;
+    width: 180px;
+}
+
+#form1 input, #form1 textarea{
+    border: solid 2px #018DE2;
+    border-radius: 2px;
+}
+
+#form1 label, #form1 button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#form1 button{
+    background-color: #FC773D;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    height: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+
 /* --------------------
-   Responsividade
+    Responsividade
 --------------------- */
 
 /* -------- TABLET -------- */
